@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hoe laat komt Dennis?</title>
+<meta name="description" content="Dennis appt dat hij er over een half uur is. Deze pagina rekent uit wanneer hij echt voor de deur staat.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Barlow+Condensed:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow"><span class="dst">DST</span>Dennis Standaard Tijd</p>
+    <h1>Hoe laat komt <span class="name">Dennis?</span></h1>
+    <p class="lede">Dennis appt <q>ben er over een half uur</q> en komt vervolgens een uur en tien minuten te laat. Kies wat hij appt, dan rekenen wij het om naar echte tijd.</p>
+  </header>
+
+  <section class="hero">
+    <figure class="cam">
+      <div class="cam-bar"><span class="rec"><i></i>Live</span><span>Tuincamera 2</span><span class="num" id="camClock">--:--:--</span></div>
+      <div class="stage" id="stage">
+        <svg id="dennis" viewBox="0 0 440 400" role="img" aria-labelledby="dTitle">
+          <title id="dTitle">Getekende Dennis met muts, onderuitgezakt in een tuinstoel, op zijn telefoon</title>
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d6dcd3"/><stop offset="1" stop-color="#eef0ea"/></linearGradient>
+            <clipPath id="wagonClip"><path d="M246 312V136Q246 84 343 82Q440 84 440 136V312Z"/></clipPath>
+            <clipPath id="eyeClip"><ellipse cx="160" cy="124" rx="5.6" ry="3.5"/><ellipse cx="182" cy="123" rx="5.6" ry="3.5"/></clipPath>
+          </defs>
+          <rect width="440" height="400" fill="url(#sky)"/>
+          <circle cx="22" cy="122" r="42" fill="#8f9a4c"/>
+          <circle cx="78" cy="150" r="56" fill="#c99a3c"/>
+          <circle cx="138" cy="126" r="40" fill="#b67d2c"/>
+          <circle cx="206" cy="164" r="36" fill="#d3ad52"/>
+          <rect x="0" y="198" width="132" height="110" fill="#c4a273"/>
+          <path d="M8 198V308M30 198V308M52 198V308M74 198V308M96 198V308M118 198V308" stroke="#b08f62" stroke-width="2"/>
+          <path d="M0 206L72 160L156 206Z" fill="#b8473a"/>
+          <path d="M0 206H156V213H0Z" fill="#8a3329"/>
+          <path d="M248 312V136Q248 84 343 82Q440 84 440 136V312Z" fill="#34383d"/>
+          <g clip-path="url(#wagonClip)" stroke="#2a2d31" stroke-width="2">
+            <path d="M270 80V312M292 80V312M314 80V312M336 80V312M358 80V312M380 80V312M402 80V312M424 80V312"/>
+          </g>
+          <rect x="318" y="100" width="44" height="9" rx="2" fill="#2a2d31"/>
+          <circle cx="344" cy="146" r="15" fill="#2a2d31" stroke="#62666b" stroke-width="3"/>
+          <path d="M338 142q6 10 12 0" stroke="#d9d5cb" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="248" y="240" width="192" height="36" fill="#b9a789"/>
+          <path d="M248 252H440M248 264H440" stroke="#a69474" stroke-width="2"/>
+          <path d="M270 240h38l-5 28h-28Z" fill="#b5653d"/>
+          <path d="M342 240h38l-5 28h-28Z" fill="#b5653d"/>
+          <path d="M404 240h34l-5 28h-24Z" fill="#b5653d"/>
+          <path d="M289 240q-14-26-6-46M289 240q2-30 12-44M289 240q12-20 24-26M361 240q-12-24-4-40M361 240q4-28 16-36M361 240q-18-14-24-18M421 240q-8-26 0-44M421 240q10-18 18-22" stroke="#5f8f3a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <rect y="300" width="440" height="100" fill="#a2916f"/>
+          <path d="M0 300Q70 292 140 302T280 300T440 302V312H0Z" fill="#8f7f5f"/>
+          <path d="M10 336l6-16 4 16 6-14 3 14M40 368l5-14 4 14 5-12 3 12M380 362l5-14 4 14 6-13 2 13M200 384l4-12 4 12 5-11 2 11" stroke="#6f8f3c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <ellipse cx="236" cy="393" rx="150" ry="9" fill="#000" opacity=".16"/>
+
+          <g class="rock">
+            <path d="M140 316L124 392" stroke="#242b28" stroke-width="11" stroke-linecap="round"/>
+            <path d="M252 314L258 390" stroke="#242b28" stroke-width="10" stroke-linecap="round"/>
+            <path d="M142 318L100 178Q95 160 113 156L136 152Q151 150 154 166L190 312Z" fill="#2f3834"/>
+            <path d="M114 186L170 290M150 182L136 280M118 232Q140 222 162 232" stroke="#414c47" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M134 298L264 294Q276 294 275 305L273 316L138 320Z" fill="#2f3834"/>
+            <path d="M262 314L272 392" stroke="#2f3834" stroke-width="12" stroke-linecap="round"/>
+
+            <g class="dennis">
+              <path d="M176 298L288 300Q300 302 300 318L298 330L182 334Z" fill="#55585e"/>
+              <path d="M272 312L304 310L314 382L284 386Z" fill="#55585e"/>
+              <path d="M280 380Q282 372 300 372L320 376Q340 380 341 392L280 394Z" fill="#1d1e21"/>
+              <path d="M282 391H340" stroke="#e9e6dd" stroke-width="4" stroke-linecap="round"/>
+              <path d="M148 318L120 200Q116 178 136 172L178 166Q206 170 212 196L232 284Q236 310 212 316Z" fill="#45494f"/>
+              <path d="M148 318L120 200Q118 188 124 182L158 316Z" fill="#3b3f44"/>
+              <path d="M168 168L176 214" stroke="#8d9297" stroke-width="2"/>
+              <rect x="171" y="186" width="4" height="9" rx="1" fill="#c9cdd2"/>
+              <g transform="translate(190 210) rotate(-10)">
+                <rect x="0" y="6" width="2.6" height="6" fill="#e3e6ea"/>
+                <rect x="4" y="3" width="2.6" height="9" fill="#e3e6ea"/>
+                <rect x="8" y="0" width="2.6" height="12" fill="#9fd36a"/>
+                <rect x="13" y="5" width="16" height="3" rx="1" fill="#e3e6ea"/>
+              </g>
+              <g class="foot">
+                <path d="M308 254L338 250L356 334L328 340Z" fill="#6c7076"/>
+                <path d="M324 334Q326 324 346 326L370 332Q386 338 382 350L326 350Z" fill="#1d1e21"/>
+                <path d="M327 348H381" stroke="#e9e6dd" stroke-width="4" stroke-linecap="round"/>
+              </g>
+              <path d="M168 276L304 238Q330 232 336 256Q340 276 320 284L196 316Q168 320 164 298Z" fill="#6c7076"/>
+              <g transform="rotate(-14 302 262)">
+                <rect x="280" y="242" width="44" height="40" rx="6" fill="#3e4146"/>
+                <circle cx="300" cy="261" r="11" fill="#8e9298"/>
+                <circle cx="296" cy="257" r="2.6" fill="#7a7e84"/>
+                <circle cx="304" cy="265" r="2" fill="#7a7e84"/>
+              </g>
+            </g>
+
+            <path d="M122 252L236 246" stroke="#2f3834" stroke-width="13" stroke-linecap="round"/>
+            <path d="M126 248L232 242" stroke="#46524c" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="240" cy="256" r="9" fill="none" stroke="#2f3834" stroke-width="6"/>
+            <path d="M238 264L250 302" stroke="#2f3834" stroke-width="10" stroke-linecap="round"/>
+
+            <g class="dennis">
+              <path d="M178 202L206 262" stroke="#4d5157" stroke-width="30" stroke-linecap="round"/>
+              <path d="M206 262L236 226" stroke="#4d5157" stroke-width="26" stroke-linecap="round"/>
+              <ellipse cx="244" cy="216" rx="12" ry="11" fill="#e2b393"/>
+              <g transform="rotate(16 244 196)">
+                <rect x="232" y="174" width="24" height="42" rx="4" fill="#17181a"/>
+                <rect class="screen" x="235" y="178" width="18" height="33" rx="2" fill="#7fb1d0"/>
+              </g>
+              <g class="thumb"><ellipse cx="251" cy="207" rx="4.5" ry="7.5" fill="#e2b393" transform="rotate(28 251 207)"/></g>
+
+              <g class="head">
+                <path d="M156 150L180 148L182 172L158 174Z" fill="#d6a688"/>
+                <path d="M146 176Q148 158 160 156L184 154Q194 158 196 174Q172 184 146 176Z" fill="#3b3f44"/>
+                <ellipse cx="139" cy="128" rx="7" ry="10" fill="#d6a688"/>
+                <path d="M138 123q4 5 0 10" stroke="#b8876a" stroke-width="2" fill="none"/>
+                <path d="M142 100Q168 88 194 100Q199 126 193 146Q184 166 166 167Q149 165 144 148Q138 126 142 100Z" fill="#e8bf9f"/>
+                <path d="M145 138Q148 160 166 165Q186 163 193 138Q190 152 180 156Q166 160 152 154Q147 148 145 138Z" fill="#5d4639" opacity=".3"/>
+                <path d="M160 145Q170 141 182 143" stroke="#5d4639" stroke-opacity=".3" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <ellipse cx="160" cy="124" rx="5.6" ry="3.5" fill="#f5f2ea"/>
+                <ellipse cx="182" cy="123" rx="5.6" ry="3.5" fill="#f5f2ea"/>
+                <g clip-path="url(#eyeClip)">
+                  <g class="eyes">
+                    <circle cx="160" cy="124" r="2.7" fill="#6f93a8"/>
+                    <circle cx="182" cy="123" r="2.7" fill="#6f93a8"/>
+                    <circle cx="160" cy="124" r="1.2" fill="#18191b"/>
+                    <circle cx="182" cy="123" r="1.2" fill="#18191b"/>
+                  </g>
+                </g>
+                <path d="M154 122.6Q160 119 166 122.6M176 121.6Q182 118 188 121.6" stroke="#8a6450" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M152 114Q159 109 166 113" stroke="#4b3a30" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+                <g class="brow"><path d="M175 112Q182 107 190 111" stroke="#4b3a30" stroke-width="3.2" fill="none" stroke-linecap="round"/></g>
+                <path d="M172 126Q176 136 170 139Q168 140 166 139" stroke="#b98a6d" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M160 150Q170 153 183 145" stroke="#7d4b3d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+                <path d="M183 145l3-2" stroke="#7d4b3d" stroke-width="2" stroke-linecap="round"/>
+                <path d="M136 102Q134 60 168 56Q204 58 200 100Z" fill="#1c1d20"/>
+                <path d="M134 96Q168 88 202 94L203 108Q168 102 135 110Z" fill="#27282c"/>
+                <path d="M142 97V109M150 95V107M158 94V106M166 93V105M174 93V105M182 93V105M190 94V106M197 95V107" stroke="#1a1b1e" stroke-width="2"/>
+                <path d="M186 95L197 93L198 103L192 108L186 104Z" fill="#c63b2f" stroke="#f0b93a" stroke-width="1.4"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <div class="bubble" id="bubble" hidden></div>
+      </div>
+      <figcaption><b>Status</b><span id="status" aria-live="polite">Zit in de tuinstoel.</span></figcaption>
+    </figure>
+
+    <form class="panel" id="ask">
+      <h2>Wat appt Dennis?</h2>
+      <div class="chips" id="chips" role="group" aria-label="Wat Dennis appt"></div>
+      <div class="fields">
+        <div class="field" id="customField" hidden>
+          <label for="customMin">Over hoeveel minuten</label>
+          <input id="customMin" type="number" min="1" max="600" value="45" inputmode="numeric">
+        </div>
+        <div class="field">
+          <label for="sentAt">Verstuurd om</label>
+          <input id="sentAt" type="time">
+        </div>
+      </div>
+      <button class="go" type="submit">Reken om naar Dennis-tijd</button>
+      <p class="hint" id="factorHint"></p>
+    </form>
+  </section>
+
+  <section class="board" aria-label="Aankomstbord">
+    <div class="board-head"><span class="live"><i></i>Aankomst · tuinstoel naar jouw deur</span><span>Dennis Standaard Tijd</span></div>
+    <div class="cells">
+      <div class="cell"><span class="lbl">Dennis zei</span><div class="flaps" id="fSaid" role="img"></div></div>
+      <div class="cell"><span class="lbl">Belooft</span><div class="flaps" id="fPromise" role="img"></div></div>
+      <div class="cell"><span class="lbl">Verwacht</span><div class="flaps amber" id="fExpect" role="img"></div></div>
+      <div class="cell"><span class="lbl">Te laat (min)</span><div class="flaps red" id="fDelay" role="img"></div></div>
+      <div class="cell wide"><span class="lbl">Opmerking</span><div class="flaps" id="fNote" role="img"></div></div>
+    </div>
+  </section>
+
+  <section class="spread">
+    <div class="spread-text">
+      <h2>Hoe zeker is dat?</h2>
+      <p class="sub">We spelen Dennis 4.000 keer na. Elke staaf is de kans dat hij in dat tijdvak binnenkomt.</p>
+      <dl class="facts">
+        <div><dt>Beste gok</dt><dd id="kMed">–</dd></div>
+        <div><dt>80% kans tussen</dt><dd id="kRange">–</dd></div>
+        <div><dt>Op tijd</dt><dd id="kOn" class="hot">–</dd></div>
+        <div><dt>Zegt af</dt><dd id="kCan">–</dd></div>
+      </dl>
+    </div>
+    <div class="chart-box" id="chartBox">
+      <svg id="chart" role="img" aria-label="Kansverdeling van de aankomsttijd van Dennis"></svg>
+      <div class="tip" id="tip" hidden></div>
+      <details class="tbl">
+        <summary>Bekijk als tabel</summary>
+        <table><thead><tr><th>Kans dat hij er is</th><th>Om</th></tr></thead><tbody id="pctBody"></tbody></table>
+      </details>
+    </div>
+  </section>
+
+  <section class="tracker">
+    <div class="tr-head"><h2>Dennis volgen</h2><p class="promise" id="promise"></p></div>
+    <div class="count" id="countBox"><strong id="count">0:00</strong><span id="countLbl">tot Dennis voor de deur staat</span></div>
+    <div class="road" aria-hidden="true">
+      <div class="line"></div>
+      <div class="door"></div>
+      <div class="pin" id="pin">
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="24" r="12" fill="#e8bf9f"/><path d="M7 21Q7 5 20 5Q33 5 33 21Z" fill="#1c1d20"/><rect x="6" y="17" width="28" height="6" rx="2" fill="#27282c"/><path d="M27 16l5-1 .5 4.5-2.8 2.2-2.4-2Z" fill="#c63b2f" stroke="#f0b93a" stroke-width=".8"/><circle cx="16" cy="27" r="1.4" fill="#18191b"/><circle cx="24" cy="27" r="1.4" fill="#18191b"/><path d="M16 32Q20 33.5 25 30" stroke="#7d4b3d" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+      </div>
+      <div class="ends"><span>Tuinstoel</span><span>Jouw deur</span></div>
+    </div>
+    <ol class="events" id="events" aria-live="polite"></ol>
+    <div class="actions">
+      <button class="go" id="btnArrive" type="button">Dennis staat voor de deur</button>
+      <button class="btn" id="btnCancel" type="button">Dennis zegt af</button>
+      <button class="btn" id="btnFF" type="button">Spoel 10 min vooruit</button>
+    </div>
+  </section>
+
+  <section class="log">
+    <h2>Logboek</h2>
+    <div class="wall">
+      <div class="factor-box"><span class="factor" id="factor">×3,1</span><span class="flabel">Dennis-factor: zoveel keer langer duurt het dan hij zegt</span></div>
+      <dl class="stats">
+        <div><dt>Gemiddeld te laat</dt><dd id="sAvg">–</dd></div>
+        <div><dt>Record</dt><dd id="sRec">–</dd></div>
+        <div><dt>Op tijd</dt><dd id="sOn">–</dd></div>
+        <div><dt>Afgezegd</dt><dd id="sCan">–</dd></div>
+      </dl>
+    </div>
+    <div class="table-wrap">
+      <table class="logtable">
+        <thead><tr><th>Datum</th><th>Dennis zei</th><th>Beloofd</th><th>Werkelijk</th><th>Te laat</th><th>Factor</th></tr></thead>
+        <tbody id="logBody"></tbody>
+      </table>
+    </div>
+    <p class="note"><span id="exampleNote">Regels met <span class="tag">voorbeeld</span> zijn proefdata. <button class="linkish" id="btnClearExamples" type="button">Haal ze weg</button> </span>Het model rekent met het hele logboek, dus elke echte aankomst maakt de voorspelling scherper. Het logboek blijft bewaard in deze browser.</p>
+  </section>
+
+  <footer class="foot">Model: lognormale verdeling, gekalibreerd op het logboek. Dennis is niet om een reactie gevraagd.</footer>
+</div>
+</body>
+</html>
